@@ -20,7 +20,6 @@ define(['Views/add_contact_view', 'Models/contact','parse'], function(add_contac
             var contact = new Contact(first_name, last_name, email, phone);
 
             contact.save(function(data){
-                console.info(data);
                 window.location.hash = '#list';
             });
 
